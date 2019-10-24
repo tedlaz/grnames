@@ -25,6 +25,6 @@ For a specific number of entries:
 
 > http://localhost:8000/v1/greek_names_generator?number=50
 
-![grnamesUsage](https://i.imgur.com/Z3aqre8.gif)
+![grnames usage](https://i.imgur.com/Z3aqre8.gif)
 
 Have fun !
