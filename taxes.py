@@ -32,6 +32,7 @@ def children_reduction(children, ekptosi_foroy_paidion):
 
 
 def meiosi_foroy(income, meiosi, paidia):
+    """Meiosi foroy"""
     len_mf = len(meiosi['max-meiosi-foroy'])
     if len_mf >= (paidia + 1):
         max_meiosi_foroy = meiosi['max-meiosi-foroy'][paidia]
@@ -40,9 +41,9 @@ def meiosi_foroy(income, meiosi, paidia):
     if income <= meiosi['income-limit']:
         return max_meiosi_foroy
     yperbainon = relu(income - meiosi['income-limit'])
-    a1 = yperbainon // meiosi['bima-income']
-    a2 = 1 if yperbainon % meiosi['bima-income'] else 0
-    meiosi_meiosis = (a1 + a2) * meiosi['bima-meiosis-foroy']
+    aa1 = yperbainon // meiosi['bima-income']
+    aa2 = 1 if yperbainon % meiosi['bima-income'] else 0
+    meiosi_meiosis = (aa1 + aa2) * meiosi['bima-meiosis-foroy']
     return relu(max_meiosi_foroy - meiosi_meiosis)
 
 

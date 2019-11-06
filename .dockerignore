@@ -2,5 +2,7 @@
 __pycache__
 venv
 LICENCE
-README
+README.md
 .vscode
+Pipfile
+Pipfile.lock
